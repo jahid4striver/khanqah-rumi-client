@@ -50,6 +50,7 @@ import AddShortBoyan from './components/Dashboard/AddShortBoyan';
 import MobileShorts from './components/Mobile/MobileShorts';
 import AddBooks from './components/Dashboard/AddBooks';
 import QuranRecitation from './components/Mobile/QuranRecitation';
+import LiveStreaming from './components/Mobile/LiveStreaming/LiveStreaming';
 
 function App() {
   const [audioData, setAudioData] = useState();
@@ -95,6 +96,7 @@ function App() {
         <Route path='/new_topics' element={<NewTopics setAudioData={setAudioData}/>}></Route>
         <Route path='/mobile_notice' element={<MobileNotice setAudioData={setAudioData}/>}></Route>
         <Route path='/register' element={<Register setAudioData={setAudioData}/>}></Route>
+        <Route path='/livestreaming' element={<LiveStreaming setAudioData={setAudioData}/>}></Route>
       </Routes>
       <Routes>
         <Route path='/dashboard' element={<PrivateRoute>

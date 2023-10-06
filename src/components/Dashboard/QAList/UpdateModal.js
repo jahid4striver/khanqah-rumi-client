@@ -9,7 +9,7 @@ const UpdateModal = ({ updateQa, setUpdateQa }) => {
 
 
     const onSubmit = (data) => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getanswer/${_id}`, {
+        fetch(`http://128.140.52.151:5000/getanswer/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

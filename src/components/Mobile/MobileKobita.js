@@ -16,7 +16,7 @@ const MobileKobita = ({ setAudioData }) => {
     const [end, setEnd] = useState(20);
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getkobita`)
+        fetch(`http://128.140.52.151:5000/getkobita`)
             .then(res => res.json())
             .then(data => {
                 setPageCount(Math.ceil(data.length / 20));
@@ -24,7 +24,7 @@ const MobileKobita = ({ setAudioData }) => {
     }, [])
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getkobita`)
+        fetch(`http://128.140.52.151:5000/getkobita`)
             .then(res => res.json())
             .then(data => {
                 setKobitas(data);
@@ -49,7 +49,7 @@ const MobileKobita = ({ setAudioData }) => {
         const view= parseInt(newView)+1;
         const viewCount= {view};
 
-        fetch(`https://madrumi.clearsoftwares.xyz/getkobita/${kobita?._id}`, {
+        fetch(`http://128.140.52.151:5000/getkobita/${kobita?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
@@ -68,7 +68,7 @@ const MobileKobita = ({ setAudioData }) => {
         const download= parseInt(newDownload)+1;
         const downloadCount= {download};
 
-        fetch(`https://madrumi.clearsoftwares.xyz/getkobita/${kobita?._id}`, {
+        fetch(`http://128.140.52.151:5000/getkobita/${kobita?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

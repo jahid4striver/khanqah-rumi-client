@@ -14,7 +14,7 @@ const Boyans = ({ setAudioData }) => {
     const [end, setEnd] = useState(8);
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/gethomeboyans`)
+        fetch(`http://128.140.52.151:5000/gethomeboyans`)
             .then(res => res.json())
             .then(data => {
                 setPageCount(Math.ceil(data.length / 8));
@@ -22,7 +22,7 @@ const Boyans = ({ setAudioData }) => {
     }, [])
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/gethomeboyans`)
+        fetch(`http://128.140.52.151:5000/gethomeboyans`)
             .then(res => res.json())
             .then(data => {
                 setboyans(data);

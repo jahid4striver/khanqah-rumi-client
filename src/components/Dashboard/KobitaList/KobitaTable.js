@@ -8,7 +8,7 @@ const AudioTable = ({ kobita, setUpdateKobita, index}) => {
     const handleDeleteAudio= ()=>{
         const proceed= window.confirm('Ary You Sure Want To Delete')
         if(proceed){
-            fetch(`https://madrumi.clearsoftwares.xyz/getkobita/${kobita._id}`, {
+            fetch(`http://128.140.52.151:5000/getkobita/${kobita._id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

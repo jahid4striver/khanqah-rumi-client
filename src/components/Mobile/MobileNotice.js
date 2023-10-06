@@ -14,7 +14,7 @@ const MobileNotice = ({}) => {
 
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getnotices`)
+        fetch(`http://128.140.52.151:5000/getnotices`)
             .then(res => res.json())
             .then(data => {
                 setNotices(data);

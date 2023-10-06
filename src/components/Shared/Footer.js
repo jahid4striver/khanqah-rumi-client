@@ -28,7 +28,7 @@ const Footer = () => {
     // }
 
     useEffect(()=>{
-        fetch('https://madrumi.clearsoftwares.xyz/getlive')
+        fetch('http://128.140.52.151:5000/getlive')
         .then(res=> res.json())
         .then(data=> setIsLive(data[0]?.live))
     },[])

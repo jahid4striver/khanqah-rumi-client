@@ -54,7 +54,7 @@ function Controls() {
       const data= {
         live:true
       }
-      fetch(`https://madrumi.clearsoftwares.xyz/getlive/63c649e5160ba05ec6fb3e81`, {
+      fetch(`http://128.140.52.151:5000/getlive/63c649e5160ba05ec6fb3e81`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -78,7 +78,7 @@ function Controls() {
       const data= {
         live:false
       }
-      fetch(`https://madrumi.clearsoftwares.xyz/getlive/63c649e5160ba05ec6fb3e81`, {
+      fetch(`http://128.140.52.151:5000/getlive/63c649e5160ba05ec6fb3e81`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

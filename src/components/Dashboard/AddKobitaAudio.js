@@ -84,7 +84,7 @@ const AddKobitaAudio = () => {
                 })
         }
 
-        fetch('https://madrumi.clearsoftwares.xyz/addkobita', {
+        fetch('http://128.140.52.151:5000/addkobita', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -99,7 +99,7 @@ const AddKobitaAudio = () => {
                 e.target.reset();
                 sendNofification();
             })
-            fetch('https://madrumi.clearsoftwares.xyz/latest', {
+            fetch('http://128.140.52.151:5000/latest', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

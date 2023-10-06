@@ -18,7 +18,7 @@ const BoyanCategory = () => {
   const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getboyans')
+        fetch('http://128.140.52.151:5000/getboyans')
             .then(res => res.json())
             .then(data => {
                 dispatch(getAllBoyans(data))

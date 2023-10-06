@@ -18,7 +18,7 @@ const AppDetails = () => {
         const queryData = { name, mobile, query, availHeight, availWidth, width, height, resulationWidth, resulationHeight};
 
         
-        fetch('https://madrumi.clearsoftwares.xyz/querys', {
+        fetch('http://128.140.52.151:5000/querys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

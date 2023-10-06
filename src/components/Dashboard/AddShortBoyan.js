@@ -7,7 +7,7 @@ const AddShortBoyan = () => {
 
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getsubjects')
+        fetch('http://128.140.52.151:5000/getsubjects')
             .then(res => res.json())
             .then(data => {
                 setSubjects(data);
@@ -78,7 +78,7 @@ const AddShortBoyan = () => {
                 })
         }
 
-        fetch('https://madrumi.clearsoftwares.xyz/addshort', {
+        fetch('http://128.140.52.151:5000/addshort', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -93,7 +93,7 @@ const AddShortBoyan = () => {
                 e.target.reset();
                 sendNofification();
             })
-            fetch('https://madrumi.clearsoftwares.xyz/latest', {
+            fetch('http://128.140.52.151:5000/latest', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

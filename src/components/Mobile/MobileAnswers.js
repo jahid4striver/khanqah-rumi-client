@@ -36,7 +36,7 @@ const MobileAnswers = ({ setAudioData }) => {
         const view= parseInt(newView)+1;
         const viewCount= {view};
 
-        fetch(`https://madrumi.clearsoftwares.xyz/getanswer/${answer?._id}`, {
+        fetch(`http://128.140.52.151:5000/getanswer/${answer?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
@@ -55,7 +55,7 @@ const MobileAnswers = ({ setAudioData }) => {
         const download= parseInt(newDownload)+1;
         const downloadCount= {download};
 
-        fetch(`https://madrumi.clearsoftwares.xyz/getanswer/${answer?._id}`, {
+        fetch(`http://128.140.52.151:5000/getanswer/${answer?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

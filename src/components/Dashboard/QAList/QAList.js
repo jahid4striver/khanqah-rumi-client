@@ -7,7 +7,7 @@ const [QAs, setQAs]= useState([]);
 const [updateQa, setUpdateQa]= useState(null);
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getanswer`)
+        fetch(`http://128.140.52.151:5000/getanswer`)
             .then(res => res.json())
             .then(data => {
                 setQAs(data)

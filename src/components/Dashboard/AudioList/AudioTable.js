@@ -8,7 +8,7 @@ const AudioTable = ({boyan, setUpdateAudio, index}) => {
     const handleDeleteAudio= ()=>{
         const proceed= window.confirm('Ary You Sure Want To Delete')
         if(proceed){
-            fetch(`https://madrumi.clearsoftwares.xyz/getboyans/${boyan._id}`, {
+            fetch(`http://128.140.52.151:5000/getboyans/${boyan._id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

@@ -16,7 +16,7 @@ const MobileShorts = ({ setAudioData }) => {
     const [end, setEnd] = useState(20);
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getshorts`)
+        fetch(`http://128.140.52.151:5000/getshorts`)
             .then(res => res.json())
             .then(data => {
                 setPageCount(Math.ceil(data.length / 20));
@@ -24,7 +24,7 @@ const MobileShorts = ({ setAudioData }) => {
     }, [])
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getshorts`)
+        fetch(`http://128.140.52.151:5000/getshorts`)
             .then(res => res.json())
             .then(data => {
                 setShorts(data);
@@ -49,7 +49,7 @@ const MobileShorts = ({ setAudioData }) => {
         const view = parseInt(newView) + 1;
         const viewCount = { view };
 
-        fetch(`https://madrumi.clearsoftwares.xyz/getshort/${short?._id}`, {
+        fetch(`http://128.140.52.151:5000/getshort/${short?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
@@ -68,7 +68,7 @@ const MobileShorts = ({ setAudioData }) => {
         const download = parseInt(newDownload) + 1;
         const downloadCount = { download };
 
-        fetch(`https://madrumi.clearsoftwares.xyz/getshort/${short?._id}`, {
+        fetch(`http://128.140.52.151:5000/getshort/${short?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

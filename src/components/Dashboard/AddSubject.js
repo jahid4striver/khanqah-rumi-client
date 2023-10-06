@@ -4,7 +4,7 @@ const AddSubject = () => {
     const [subjects, setSubjects] = useState([]);
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getsubjects')
+        fetch('http://128.140.52.151:5000/getsubjects')
             .then(res => res.json())
             .then(data => {
                 setSubjects(data);
@@ -17,7 +17,7 @@ const AddSubject = () => {
         console.log(subjectName);
         const cateData = { subjectName: subjectName }
 
-        fetch('https://madrumi.clearsoftwares.xyz/addsubjects',{
+        fetch('http://128.140.52.151:5000/addsubjects',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

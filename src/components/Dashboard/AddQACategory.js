@@ -4,7 +4,7 @@ const AddQACategory = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/get_qa_categories')
+        fetch('http://128.140.52.151:5000/get_qa_categories')
             .then(res => res.json())
             .then(data => {
                 setCategories(data);
@@ -17,7 +17,7 @@ const AddQACategory = () => {
         console.log(categoryName);
         const cateData = { categoryName }
 
-        fetch('https://madrumi.clearsoftwares.xyz/qa_categories', {
+        fetch('http://128.140.52.151:5000/qa_categories', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

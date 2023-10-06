@@ -9,7 +9,7 @@ const AddAudio = () => {
     const [id, setId] = useState('');
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getcategories')
+        fetch('http://128.140.52.151:5000/getcategories')
             .then(res => res.json())
             .then(data => {
                 setCategories(data);
@@ -17,7 +17,7 @@ const AddAudio = () => {
     }, [categories])
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getsubjects')
+        fetch('http://128.140.52.151:5000/getsubjects')
             .then(res => res.json())
             .then(data => {
                 setSubjects(data);
@@ -105,7 +105,7 @@ const AddAudio = () => {
                 })
         }
 
-        fetch('https://madrumi.clearsoftwares.xyz/addboyans', {
+        fetch('http://128.140.52.151:5000/addboyans', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -122,7 +122,7 @@ const AddAudio = () => {
                 console.log(subject);
             })
 
-        fetch('https://madrumi.clearsoftwares.xyz/latest', {
+        fetch('http://128.140.52.151:5000/latest', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

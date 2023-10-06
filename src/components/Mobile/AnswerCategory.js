@@ -16,7 +16,7 @@ const AnswerCategory = () => {
   const [catgories, setCatgories]= useState([]);
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getanswer')
+        fetch('http://128.140.52.151:5000/getanswer')
             .then(res => res.json())
             .then(data => {
                 dispatch(getAllAnswer(data))
@@ -24,7 +24,7 @@ const AnswerCategory = () => {
             })
     }, [dispatch]);
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/get_qa_categories')
+        fetch('http://128.140.52.151:5000/get_qa_categories')
             .then(res => res.json())
             .then(data => {
                 setCatgories(data)

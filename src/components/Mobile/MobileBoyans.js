@@ -102,7 +102,7 @@ const MobileBoyans = ({ setAudioData }) => {
         const view = parseInt(newView) + 1;
         const viewCount = { view };
 
-        fetch(`https://madrumi.clearsoftwares.xyz/getboyans/${boyan?._id}`, {
+        fetch(`http://128.140.52.151:5000/getboyans/${boyan?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
@@ -121,7 +121,7 @@ const MobileBoyans = ({ setAudioData }) => {
         const download = parseInt(newDownload) + 1;
         const downloadCount = { download };
 
-        fetch(`https://madrumi.clearsoftwares.xyz/getboyans/${boyan?._id}`, {
+        fetch(`http://128.140.52.151:5000/getboyans/${boyan?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

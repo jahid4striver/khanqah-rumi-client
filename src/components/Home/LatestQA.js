@@ -9,7 +9,7 @@ const LatestQA = ({setAudioData}) => {
 
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getanswer')
+        fetch('http://128.140.52.151:5000/getanswer')
             .then(res => res.json())
             .then(data => {
                 setAnswers(data);

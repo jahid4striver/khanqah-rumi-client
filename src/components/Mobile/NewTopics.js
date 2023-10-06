@@ -12,7 +12,7 @@ const NewTopics = ({ setAudioData }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getlatest`)
+        fetch(`http://128.140.52.151:5000/getlatest`)
             .then(res => res.json())
             .then(data => {
                 setLatests(data);
@@ -20,7 +20,7 @@ const NewTopics = ({ setAudioData }) => {
             })
     }, [])
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getboyans`)
+        fetch(`http://128.140.52.151:5000/getboyans`)
             .then(res => res.json())
             .then(data => {
                 setBoyans(data);
@@ -28,7 +28,7 @@ const NewTopics = ({ setAudioData }) => {
             })
     }, [])
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getanswer`)
+        fetch(`http://128.140.52.151:5000/getanswer`)
             .then(res => res.json())
             .then(data => {
                 setAnswers(data);
@@ -36,7 +36,7 @@ const NewTopics = ({ setAudioData }) => {
             })
     }, [])
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getkobita`)
+        fetch(`http://128.140.52.151:5000/getkobita`)
             .then(res => res.json())
             .then(data => {
                 setKobitas(data);
@@ -45,7 +45,7 @@ const NewTopics = ({ setAudioData }) => {
             })
     }, [])
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getshorts`)
+        fetch(`http://128.140.52.151:5000/getshorts`)
             .then(res => res.json())
             .then(data => {
                 setShorts(data);
@@ -66,7 +66,7 @@ const NewTopics = ({ setAudioData }) => {
             const viewCount = { view };
 
             console.log(filter2[0]._id);
-            fetch(`https://madrumi.clearsoftwares.xyz/getboyans/${filter2[0]?._id}`, {
+            fetch(`http://128.140.52.151:5000/getboyans/${filter2[0]?._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -87,7 +87,7 @@ const NewTopics = ({ setAudioData }) => {
             const viewCount = { view };
 
             console.log(filter2[0]._id);
-            fetch(`https://madrumi.clearsoftwares.xyz/getanswer/${filter2[0]?._id}`, {
+            fetch(`http://128.140.52.151:5000/getanswer/${filter2[0]?._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -109,7 +109,7 @@ const NewTopics = ({ setAudioData }) => {
             const viewCount = { view };
 
             console.log(filter2[0]._id);
-            fetch(`https://madrumi.clearsoftwares.xyz/getkobita/${filter2[0]?._id}`, {
+            fetch(`http://128.140.52.151:5000/getkobita/${filter2[0]?._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -130,7 +130,7 @@ const NewTopics = ({ setAudioData }) => {
             const viewCount = { view };
 
             console.log(filter2[0]._id);
-            fetch(`https://madrumi.clearsoftwares.xyz/getshort/${filter2[0]?._id}`, {
+            fetch(`http://128.140.52.151:5000/getshort/${filter2[0]?._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -157,7 +157,7 @@ const NewTopics = ({ setAudioData }) => {
             const downloadCount = { download };
 
             console.log(filter2[0]._id);
-            fetch(`https://madrumi.clearsoftwares.xyz/getboyans/${filter2[0]?._id}`, {
+            fetch(`http://128.140.52.151:5000/getboyans/${filter2[0]?._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -179,7 +179,7 @@ const NewTopics = ({ setAudioData }) => {
             const downloadCount = { download };
 
             console.log(filter2[0]._id);
-            fetch(`https://madrumi.clearsoftwares.xyz/getanswer/${filter2[0]?._id}`, {
+            fetch(`http://128.140.52.151:5000/getanswer/${filter2[0]?._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -202,7 +202,7 @@ const NewTopics = ({ setAudioData }) => {
             const downloadCount = { download };
 
             console.log(filter2[0]._id);
-            fetch(`https://madrumi.clearsoftwares.xyz/getkobita/${filter2[0]?._id}`, {
+            fetch(`http://128.140.52.151:5000/getkobita/${filter2[0]?._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -224,7 +224,7 @@ const NewTopics = ({ setAudioData }) => {
             const downloadCount = { download };
 
             console.log(filter2[0]._id);
-            fetch(`https://madrumi.clearsoftwares.xyz/getshort/${filter2[0]?._id}`, {
+            fetch(`http://128.140.52.151:5000/getshort/${filter2[0]?._id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'

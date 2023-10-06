@@ -4,7 +4,7 @@ const AddCategory = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getcategories')
+        fetch('http://128.140.52.151:5000/getcategories')
             .then(res => res.json())
             .then(data => {
                 setCategories(data);
@@ -17,7 +17,7 @@ const AddCategory = () => {
         console.log(categoryName);
         const cateData = { categoryName }
 
-        fetch('https://madrumi.clearsoftwares.xyz/categories', {
+        fetch('http://128.140.52.151:5000/categories', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

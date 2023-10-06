@@ -7,7 +7,7 @@ const [boyans, setBoyans]= useState([]);
 const [updateAudio, setUpdateAudio]= useState(null);
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getboyans`)
+        fetch(`http://128.140.52.151:5000/getboyans`)
             .then(res => res.json())
             .then(data => {
                 setBoyans(data)

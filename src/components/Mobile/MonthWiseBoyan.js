@@ -63,7 +63,7 @@ const MonthWiseBoyan = () => {
 
 
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getboyans')
+        fetch('http://128.140.52.151:5000/getboyans')
             .then(res => res.json())
             .then(data => {
                 dispatch(getAllBoyans(data))
@@ -71,7 +71,7 @@ const MonthWiseBoyan = () => {
             })
     }, [dispatch]);
     useEffect(() => {
-        fetch('https://madrumi.clearsoftwares.xyz/getsubjects')
+        fetch('http://128.140.52.151:5000/getsubjects')
             .then(res => res.json())
             .then(data => {
                 setCatgories(data)

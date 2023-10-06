@@ -12,7 +12,7 @@ const Books = ({}) => {
 
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getbooks`)
+        fetch(`http://128.140.52.151:5000/getbooks`)
             .then(res => res.json())
             .then(data => {
                 setBooks(data);

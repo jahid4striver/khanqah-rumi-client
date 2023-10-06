@@ -7,7 +7,7 @@ const [kobitas, setKobitas]= useState([]);
 const [updateKobita, setUpdateKobita]= useState(null);
 
     useEffect(() => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getkobita`)
+        fetch(`http://128.140.52.151:5000/getkobita`)
             .then(res => res.json())
             .then(data => {
                 setKobitas(data)

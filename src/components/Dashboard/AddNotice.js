@@ -64,7 +64,7 @@ const AddNotice = () => {
                 })
         }
 
-        fetch('https://madrumi.clearsoftwares.xyz/notices', {
+        fetch('http://128.140.52.151:5000/notices', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

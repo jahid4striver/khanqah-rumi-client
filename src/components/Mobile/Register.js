@@ -11,7 +11,7 @@ const Register = () => {
         const queryData = { name, mobile, query}
 
         
-        fetch('https://madrumi.clearsoftwares.xyz/users', {
+        fetch('http://128.140.52.151:5000/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

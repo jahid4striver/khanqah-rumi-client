@@ -8,7 +8,7 @@ const QATable = ({ qa, setUpdateQa, index}) => {
     const handleDeleteAudio= ()=>{
         const proceed= window.confirm('Ary You Sure Want To Delete')
         if(proceed){
-            fetch(`https://madrumi.clearsoftwares.xyz/getanswer/${qa._id}`, {
+            fetch(`http://128.140.52.151:5000/getanswer/${qa._id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

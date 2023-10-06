@@ -9,7 +9,7 @@ const UpdateModal = ({ updateAudio, setUpdateAudio }) => {
 
 
     const onSubmit = (data) => {
-        fetch(`https://madrumi.clearsoftwares.xyz/getboyans/${_id}`, {
+        fetch(`http://128.140.52.151:5000/getboyans/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
