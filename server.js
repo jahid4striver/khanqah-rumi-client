@@ -1,6 +1,9 @@
 const express = require('express');
+const cors= require('cors');
 const path = require('path');
 const app = express();
+
+app.use(cors());
 
 // Serve static files from the 'build' directory
 app.use(express.static(path.join(__dirname, 'build')));
@@ -11,7 +14,7 @@ app.get('*', (req, res) => {
 });
 
 // Define the port to listen on
-const port = 3000;
+const port = process.env.PORT| 10000;
 
 // Start the server
 app.listen(port, () => {
