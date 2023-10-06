@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bd9f7916.css",
+    "main.js": "/static/js/main.6b3ab8de.js",
+    "static/js/787.6f52e74a.chunk.js": "/static/js/787.6f52e74a.chunk.js",
+    "static/media/bg4.png": "/static/media/bg4.664a9a2f5287779eef02.png",
+    "static/media/UnicodeArabicFont.ttf": "/static/media/UnicodeArabicFont.9fd47b637ef147b5af62.ttf",
+    "static/media/madrasha.webp": "/static/media/madrasha.742529ae3a3e2c0ac0b4.webp",
+    "static/media/loading3.gif": "/static/media/loading3.3dc1918d52a42c245f7a.gif",
+    "static/media/bg5.jpg": "/static/media/bg5.4966f596b9551c627b91.jpg",
+    "static/media/bg3.jpg": "/static/media/bg3.55010c46de2130a88d3e.jpg",
+    "static/media/bg8.jpg": "/static/media/bg8.211ce839ca2ad404666f.jpg",
+    "static/media/quranlisten.png": "/static/media/quranlisten.3ce6b18c3eab314833cf.png",
+    "static/media/mobileflower.jpg": "/static/media/mobileflower.5bf36aa74595ab6b143b.jpg",
+    "static/media/live.svg": "/static/media/live.9679b38662536624d84695cecd114e7b.svg",
+    "static/media/ecu.gif": "/static/media/ecu.f7f721aaf8de871bbb44.gif",
+    "static/media/boyan.svg": "/static/media/boyan.3ea5d1b5703675e3d2d0b262d36fc676.svg",
+    "static/media/play.png": "/static/media/play.cd8ad4544ed8e14fa385.png",
+    "static/media/headflower.jpg": "/static/media/headflower.a54832aeba67c7fc223c.jpg",
+    "static/media/kobita.svg": "/static/media/kobita.816f37386763eb8db1987cf939723800.svg",
+    "static/media/prayer.svg": "/static/media/prayer.c325fbe55b11889a5f8d0f55bc8425c0.svg",
+    "static/media/quran.svg": "/static/media/quran.e9bae48b457d21f67499268678b09c72.svg",
+    "static/media/question.svg": "/static/media/question.7ef1c74f133adac5ef434e23a446fbb6.svg",
+    "static/media/book.svg": "/static/media/book.ccd6b38f39028c43be466b112aa499da.svg",
+    "static/media/info.svg": "/static/media/info.c0f03c3b267c4157d22d3cf3dc87f2a5.svg",
+    "index.html": "/index.html",
+    "main.bd9f7916.css.map": "/static/css/main.bd9f7916.css.map",
+    "main.6b3ab8de.js.map": "/static/js/main.6b3ab8de.js.map",
+    "787.6f52e74a.chunk.js.map": "/static/js/787.6f52e74a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd9f7916.css",
+    "static/js/main.6b3ab8de.js"
+  ]
+}
